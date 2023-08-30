@@ -19,7 +19,7 @@ return new class extends Migration
 
             $table->integer("id_pay")->unsigned();
             $table->foreign("id_pay")->references("id")->
-            on("pays")-> onDelete("cascade")->onUpdate("cascade");
+            on("payments")-> onDelete("cascade")->onUpdate("cascade");
 
             $table->integer("id_user")->unsigned();
             $table->foreign("id_user")->references("id")->
