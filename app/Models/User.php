@@ -17,11 +17,24 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+
+
+
+     static $rules =[
+        'name'=> 'required',
+        'email'=> 'required',
+        'password'=> 'required',
+        'age'=> 'required',
+        
+     ];
+     protected $perPage= 20;
     protected $fillable = [
         'name',
         'email',
         'password',
-        ''
+        'age',
+         'membership',
+
     ];
 
     /**
@@ -43,6 +56,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+
 
     public function memb()
     {

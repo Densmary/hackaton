@@ -10,7 +10,7 @@ class Pay_model extends Model
     protected $table="crops";
     protected $fillable=
     [
-        "id", "ccn", "datess"
+     "ccn", "date"
     ];
 
    public function menmber()

@@ -10,7 +10,7 @@ class Sale_model extends Model
     protected $table="crops";
     protected $fillable=
     [
-        "id", "dates", "id_user", "id_product"
+        "date", "id_user", "id_product"
     ];
 
     public function proc()

@@ -10,7 +10,7 @@ class Sector_model extends Model
     protected $table='crops';
     protected $fillable= 
     [
-        "id", "names", "description", "category"
+         "names", "description", "category"
     ];
 
     public function prod()

@@ -10,7 +10,7 @@ class Purchase_model extends Model
     protected $table ="crops";
     protected $fillable =
     [
-    "id", "name", "description", "price", "size", "color", "avilable", "ammount", "photo", "status", "id_user", "id_sector"
+    "name", "description", "price", "size", "color", "avilable", "ammount", "photo", "status", "id_user", "id_sector"
     ];   
 
     public function users()

@@ -10,7 +10,7 @@ class Catalog_model extends Model
 protected $table = "crops";
 protected $fillable =
 [
-    "id", "name", "dates", "description", "id_product"
+    "name", "date", "description", "id_product"
 ];
     public function produc()
     {
