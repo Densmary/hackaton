@@ -10,7 +10,7 @@ class Membership_model extends Model
    protected $table= 'crops';
    protected $fillable=
    [
-    "id", "payment", "ccn", "duration", "id_pay", "id_user"
+    "payment", "ccn", "duration", "id_pay", "id_user" //A futuro selección de id_pay e id_user atumático//
    ];
 
    public function us()

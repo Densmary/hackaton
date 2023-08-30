@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('purchases', function (Blueprint $table) {
             $table->increments("id");
-            $table->date("dates");            
+            $table->date("date");            
             $table->integer("ammount");
 
             $table->integer("id_user")->unsigned();

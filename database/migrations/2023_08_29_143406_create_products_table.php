@@ -29,7 +29,7 @@ return new class extends Migration
 
             $table->integer("id_sector")->unsigned();
             $table->foreign("id_sector")->references("id")->
-            on("sectors")->OnDelete("cascade")->OnUpdate("cascade");
+            on("sector")->OnDelete("cascade")->OnUpdate("cascade");
 
             $table->timestamps();
         });

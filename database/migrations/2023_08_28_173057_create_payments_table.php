@@ -11,14 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('messagess', function (Blueprint $table) {
+        Schema::create('payments', function (Blueprint $table) {
             $table->increments("id");
-            $table->string("messages");
-            $table->binary("media");
-            
-            $table->integer("id_user")->unsigned();
-            $table->foreign("id_user")->references("id")->
-            on("users")->onDelete("cascade")->OnUpdate("cascade");
+            $table->string("ccn");
+            $table->date("date");
 
             $table->timestamps();
         });
@@ -29,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('messagess');
+        Schema::dropIfExists('payments');
     }
 };

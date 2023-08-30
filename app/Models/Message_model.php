@@ -10,7 +10,7 @@ class Message_model extends Model
    protected $table="crops";
    protected $fillable= 
    [
-    "id", "messages", "media", "id_user"
+   "messages", "media", "id_user"//A futuro seleccion de id de usuario a enviar mensaje en automatico//
    ];
 
    public function use()
