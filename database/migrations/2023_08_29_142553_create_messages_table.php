@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('messagess', function (Blueprint $table) {
+        Schema::create('messages', function (Blueprint $table) {
             $table->increments("id");
-            $table->string("messages");
+            $table->string("message");
             $table->binary("media");
             
             $table->integer("id_user")->unsigned();
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('messagess');
+        Schema::dropIfExists('messages');
     }
 };

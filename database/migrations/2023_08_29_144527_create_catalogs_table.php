@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('catalogs', function (Blueprint $table) {
             $table->increments("id");
             $table->string("name");
-            $table->date("dates");
+            $table->date("date");
             $table->string("description");
             
             $table->integer("id_product")->unsigned();
