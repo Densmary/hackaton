@@ -27,7 +27,7 @@ class User extends Authenticatable
         'password'=> 'required',
         'age'=> 'required',
         //HI
-        
+        //ok
      ];
      protected $perPage= 20;
     protected $fillable = [
