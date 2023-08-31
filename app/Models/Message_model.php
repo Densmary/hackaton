@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Message_model extends Model
 {
+
+   static $rules=
+   [
+      'messages'=> 'required',
+      'id_user'=> 'required',
+   ];
+
    protected $table="crops";
    protected $fillable= 
    [

@@ -7,10 +7,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class Purchase_model extends Model
 {
+    static $rules=
+    [
+        "name"=> "required",
+        "price"=> "required",
+        "avilable"=> "required",
+        
+    ];
+
     protected $table ="crops";
     protected $fillable =
     [
-    "name", "description", "price", "size", "color", "avilable", "ammount", "photo", "status", "id_user", "id_sector"
+    "name", "description", "price", "size", "color",
+    "avilable", "ammount", "photo", "status", "id_user", "id_sector"
     ];   
 
     public function users()

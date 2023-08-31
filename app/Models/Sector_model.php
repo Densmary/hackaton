@@ -7,8 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Sector_model extends Model
 {
+
+    static $rules=
+    [
+        'name'=> 'require',
+        'category'=>'require'
+    ];
+
+
     protected $table='crops';
     protected $fillable= 
+    
     [
          "names", "description", "category"
     ];

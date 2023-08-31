@@ -7,6 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pay_model extends Model
 {
+
+    static $rules=
+    [
+        'ccn'=> 'required',
+        'password'=> 'required'
+    ];
     protected $table="crops";
     protected $fillable=
     [

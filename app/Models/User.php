@@ -20,7 +20,8 @@ class User extends Authenticatable
 
 
 
-     static $rules =[
+     static $rules =
+     [
         'name'=> 'required',
         'email'=> 'required',
         'password'=> 'required',

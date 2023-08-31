@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string("payment", 6);
             $table->string("ccn", 22);
             $table->time("duration");
+            $table->string("password");
 
             $table->integer("id_pay")->unsigned();
             $table->foreign("id_pay")->references("id")->
