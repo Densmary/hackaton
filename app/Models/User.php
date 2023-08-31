@@ -26,6 +26,7 @@ class User extends Authenticatable
         'email'=> 'required',
         'password'=> 'required',
         'age'=> 'required',
+        //HI
         
      ];
      protected $perPage= 20;
