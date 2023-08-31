@@ -14,7 +14,7 @@ class Membership_model extends Model
       'ccn'=> 'required',
       'password'=> 'required',
    ];
-   protected $table= 'crops';
+   protected $table= 'crops'; //O
    protected $fillable=
    [
     "payment", "ccn", "duration","password", "id_pay", "id_user", //A futuro selección de id_pay e id_user atumático//
