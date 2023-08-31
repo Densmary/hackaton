@@ -19,6 +19,7 @@ protected $fillable =
 ];
     public function produc()
     {
+        //e
         return $this->hasMany(Product::class);
     }
 
