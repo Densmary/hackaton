@@ -20,12 +20,14 @@ class User extends Authenticatable
 
 
 
-     static $rules =[
+     static $rules =
+     [
         'name'=> 'required',
         'email'=> 'required',
         'password'=> 'required',
         'age'=> 'required',
-        
+        //HI
+        //ok
      ];
      protected $perPage= 20;
     protected $fillable = [
