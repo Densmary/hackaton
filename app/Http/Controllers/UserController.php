@@ -12,6 +12,7 @@ class UserController extends Controller
        /**
      * Display a listing of the resource.
      * new change just for comment
+     * second change for testing
      * @return \Illuminate\Http\Response
      */
     public function index()
@@ -21,7 +22,7 @@ class UserController extends Controller
 
         return view('user.index', compact('users'))
             ->with('i', (request()->input('page', 1) - 1) * $users->perPage());
-            
-    }
+
+    }//YUYU
 
 }
