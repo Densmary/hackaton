@@ -21,6 +21,7 @@ class UserController extends Controller
 
         return view('user.index', compact('users'))
             ->with('i', (request()->input('page', 1) - 1) * $users->perPage());
+            
     }
 
 }
