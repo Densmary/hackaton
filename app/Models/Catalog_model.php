@@ -7,6 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Catalog_model extends Model
 {
+
+    static $rules=
+    [
+        'name'=> 'required',
+    ];
 protected $table = "crops";
 protected $fillable =
 [
@@ -14,6 +19,7 @@ protected $fillable =
 ];
     public function produc()
     {
+        //e
         return $this->hasMany(Product::class);
     }
 

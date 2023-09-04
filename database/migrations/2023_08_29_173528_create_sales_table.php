@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('sales', function (Blueprint $table) {
             $table->increments("id");
             $table->date("dates");
+            $table->integer("ammount");
 
             $table->integer("id_user")->unsigned();
             $table->foreign("id_user")->references("id")->

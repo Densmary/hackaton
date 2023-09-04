@@ -7,10 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Sale_model extends Model
 {
+
+    /*Esta inforamación será automática, el usuario no tendrá que
+    colocar ninguna información*/
     protected $table="crops";
     protected $fillable=
     [
-        "date", "id_user", "id_product"
+        "date", "ammount" ,"id_user", "id_product"
     ];
 
     public function proc()

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->increments("id");
             $table->string("ccn");
             $table->date("date");
+            $table->string("password");
 
             $table->timestamps();
         });
