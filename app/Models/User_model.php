@@ -24,7 +24,7 @@ class User_model extends Model
         'email'=> 'required',
         'password'=> 'required',
         'age'=> 'required',
-       
+       //ESTE ES UN COMENTARIO
      ];
 
      protected $perPage= 20;
