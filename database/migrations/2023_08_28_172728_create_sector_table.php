@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('sector', function (Blueprint $table) {
             $table->increments("id");
             $table->string("name");
-            $table->string("description");
+            $table->string("description")->nullable();
             $table->string("category");
-            //a
+           
 
 
             $table->timestamps();
