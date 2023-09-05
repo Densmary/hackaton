@@ -16,11 +16,11 @@ return new class extends Migration
             $table->string("name");            
             $table->string("description");
             $table->string("price");
-            $table->char("size", 5);
-            $table->string("color")          ;  
+            $table->char("size", 5)->nullable();
+            $table->string("color")->nullable();  
             $table->string("avilable");
-            $table->integer("ammount");
-            $table->binary("photo");
+            $table->integer("ammount")->nullable();
+            $table->binary("photo")->nullable();
             $table->string("status");
 
             $table->integer("id_user")->unsigned();
