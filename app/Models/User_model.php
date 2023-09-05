@@ -24,11 +24,11 @@ class User_model extends Model
         'email'=> 'required',
         'password'=> 'required',
         'age'=> 'required',
-        //HI
-        //ok
+       //ESTE ES UN COMENTARIO
      ];
+
      protected $perPage= 20;
-    protected $fillable = [
+     protected $fillable = [
         'name',
         'email',
         'password',
