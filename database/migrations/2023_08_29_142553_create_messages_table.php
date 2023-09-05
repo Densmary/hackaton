@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('messages', function (Blueprint $table) {
             $table->increments("id");
             $table->string("message");
-            $table->binary("media");
+            $table->binary("media")->nullable();
             
             $table->integer("id_user")->unsigned();
             $table->foreign("id_user")->references("id")->
