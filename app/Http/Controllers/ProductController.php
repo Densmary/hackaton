@@ -6,9 +6,6 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-<<<<<<< Updated upstream
-    //
-=======
     /***********************
     public function store (Request $request)
     {
@@ -18,5 +15,4 @@ class ProductController extends Controller
         ]);
     }   
     *********************** */
->>>>>>> Stashed changes
 }
