@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    /***********************
+    /* 
+    **********************
     public function store (Request $request)
     {
         $request->validate
@@ -14,5 +15,6 @@ class ProductController extends Controller
             'photo'=> 'required│image│max:5120', 5 megabytes
         ]);
     }   
-    *********************** */
+    *********************** 
+    */
 }
