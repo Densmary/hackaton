@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\User_model;
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Auth\Authenticatable;
 
-class UserController extends Controller
-{
+class UserController extends Controller {
     //
        /**
      * Display a listing of the resource.

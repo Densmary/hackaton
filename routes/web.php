@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\SectorController;
+//use App\Http\Controllers\SectorController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,5 @@ Route::get('/', function () {
 });
 
 Route::get('/home',[App\Http\Controllers\UserController::class, 'index'])->name('home');
+
 Route::resource('users', UserController::class);
