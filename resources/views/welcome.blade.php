@@ -129,7 +129,7 @@
       </div>
     </header>
 
-    <section id="billboard" class="overflow-hidden">
+    <section id="billboard" class="overflow-hidden" >
 
       <button class="button-prev">
         <i class="icon icon-chevron-left"></i>
@@ -139,12 +139,12 @@
       </button>
       <div class="swiper main-swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url('images/banner1.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;">
+          <div class="swiper-slide" style="background-image: url('images/carro.png');background-repeat: no-repeat;background-size: cover;background-position: center;">
             <div class="banner-content">
               <div class="container">
                 <div class="row">
-                  <div class="col-md-6">
-                    <h2 class="banner-title">¡Han llegado nuevos emprendimientos!</h2>
+                  <div class="col-md-6" >
+                    <h3 class="banner-title" >¡Han llegado <br>nuevos emprendimientos!</h3>
                     <p></p>
                     <div class="btn-wrap">
                       <a href="shop.html" class="btn btn-light btn-medium d-flex align-items-center" tabindex="0">Iniciar <i class="icon icon-arrow-io"></i>
@@ -156,7 +156,7 @@
             </div>
           </div>
           <div class="swiper-slide" style="background-image: url('images/banner2.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;">
-            <div class="banner-content">
+          <div class="banner-content">
               <div class="container">
                 <div class="row">
                   <div class="col-md-6">
@@ -1181,61 +1181,61 @@
             </a>
           </div>
         </div>
-        <div class="row d-flex flex-wrap">
+        <div class="row d-flex flex-wrap" width:80%>
           <article class="col-md-4 post-item">
             <div class="image-holder zoom-effect">
               <a href="single-post.html">
-                <img src="../assets/images/post-img1.jpg" alt="post" class="post-image">
+                <img src="../assets/images/Juana.jpg" alt="post" class="post-image">
               </a>
             </div>
             <div class="post-content d-flex">
               <div class="meta-date">
-                <div class="meta-day text-primary">22</div>
-                <div class="meta-month">Aug-2021</div>
+                <div class="meta-day text-primary"></div>
+                <div class="meta-month"></div>
               </div>
               <div class="post-header">
                 <h3 class="post-title">
-                  <a href="single-post.html">top 10 casual look ideas to dress up your kids</a>
+                  <a href="single-post.html">Juana Zeledón</a>
                 </h3>
-                <a href="blog.html" class="blog-categories">Fashion</a>
+                <a href="blog.html" class="blog-categories">Emprendedor</a>
               </div>
             </div>
           </article>
           <article class="col-md-4 post-item">
             <div class="image-holder zoom-effect">
               <a href="single-post.html">
-                <img src="../assets/images/post-img2.jpg" alt="post" class="post-image">
+                <img src="../assets/images/Sol.jpg" alt="post" class="post-image" width:200px hight:100px>
               </a>
             </div>
             <div class="post-content d-flex">
               <div class="meta-date">
-                <div class="meta-day text-primary">25</div>
-                <div class="meta-month">Aug-2021</div>
+                <div class="meta-day text-primary"></div>
+                <div class="meta-month"></div>
               </div>
               <div class="post-header">
                 <h3 class="post-title">
-                  <a href="single-post.html">Latest trends of wearing street wears supremely</a>
+                  <a href="single-post.html">Daniel Garmendia</a>
                 </h3>
-                <a href="blog.html" class="blog-categories">Trending</a>
+                <a href="blog.html" class="blog-categories">Proveedor</a>
               </div>
             </div>
           </article>
           <article class="col-md-4 post-item">
             <div class="image-holder zoom-effect">
               <a href="single-post.html">
-                <img src="../assets/images/post-img3.jpg" alt="post" class="post-image">
+                <img src="../assets/images/Dani.jpg"  alt="post" class="post-image" >
               </a>
             </div>
             <div class="post-content d-flex">
               <div class="meta-date">
-                <div class="meta-day text-primary">28</div>
-                <div class="meta-month">Aug-2021</div>
+                <div class="meta-day text-primary"></div>
+                <div class="meta-month"></div>
               </div>
               <div class="post-header">
                 <h3 class="post-title">
-                  <a href="single-post.html">types of comfortable clothes ideas for women</a>
+                  <a href="single-post.html">Solieth Zamora</a>
                 </h3>
-                <a href="blog.html" class="blog-categories">Inspiration</a>
+                <a href="blog.html" class="blog-categories">Emprendedor</a>
               </div>
             </div>
           </article>
@@ -1399,21 +1399,6 @@
       </div>
       <hr>
     </footer>
-
-    <div id="footer-bottom">
-      <div class="container">
-        <div class="d-flex align-items-center flex-wrap justify-content-between">
-          <div class="copyright">
-            <p>Freebies by <a href="https://templatesjungle.com/">Templates Jungle</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
-            </p>
-          </div>
-          <div class="payment-method">
-            <p>Payment options :</p>
-            <div class="card-wrap">
-              <img src="../assets/images/visa-icon.jpg" alt="visa">
-              <img src="../assets/images/mastercard.png" alt="mastercard">
-              <img src="../assets/images/american-express.jpg" alt="american-express">
-            </div>
           </div>
         </div>
       </div>
