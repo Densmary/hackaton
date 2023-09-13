@@ -75,7 +75,7 @@
                                 </div>
                                     
                                 <a class="btn btn-link col-md-8 offset-md-3 py-4" href="http://127.0.0.1:8000/register">
-                                {{ __('¿Ya tienes cuenta?') }} Registrarse</a>
+                                {{ __('¿No tienes cuenta?') }} Registrarse</a>
                             </div>
                         </div>
                     </form>

@@ -1204,7 +1204,7 @@
           <article class="col-md-4 post-item">
             <div class="image-holder zoom-effect">
               <a href="single-post.html">
-                <img src="../assets/images/Sol.jpg" alt="post" class="post-image" width:200px hight:100px>
+                <img src="../assets/images/Sol.jpg" height="375px" width="375px">
               </a>
             </div>
             <div class="post-content d-flex">
@@ -1223,7 +1223,7 @@
           <article class="col-md-4 post-item">
             <div class="image-holder zoom-effect">
               <a href="single-post.html">
-                <img src="../assets/images/Dani.jpg"  alt="post" class="post-image" >
+                <img src="../assets/images/Dani.jpg" height="400px" width="400px" >
               </a>
             </div>
             <div class="post-content d-flex">
@@ -1258,7 +1258,7 @@
                 <h3 class="item-subtitle">¿Eres un emprendedor? </h3>
                 <p>Nosotros te ayudamos a interactuar con clientes y proveedores para ampliar tu negocio.</p>
                 <div class="btn-wrap">
-                  <a href="shop.html" class="d-flex align-items-center">Iniciar sesión<i class="icon icon-arrow-io"></i>
+                  <a href="login" class="d-flex align-items-center">Iniciar sesión<i class="icon icon-arrow-io"></i>
                   </a>
                 </div>
               </div>
@@ -1273,7 +1273,7 @@
                 <div class="categories">¿Eres un proveedor?</div>
                 <h5 class="item-subtitle">Contacta a mas emprededores y oferta tus productos con nosotros</h5>
                 <div class="btn-wrap">
-                  <a href="shop.html" class="d-flex align-items-center">Iniciar sesión <i class="icon icon-arrow-io"></i>
+                  <a href="login" class="d-flex align-items-center">Iniciar sesión <i class="icon icon-arrow-io"></i>
                   </a>
                 </div>
               </div>
@@ -1286,7 +1286,7 @@
                 <div class="categories">¿Eres un cliente?</div>
                 <h5 class="item-subtitle">Registrate y obtén tus productos favoritos en nuestro sitio web, nuestros emprendedores te esperan.</h5>
                 <div class="btn-wrap">
-                  <a href="shop.html" class="d-flex align-items-center">Iniciar sesión <i class="icon icon-arrow-io"></i>
+                  <a href="login" class="d-flex align-items-center">Iniciar sesión <i class="icon icon-arrow-io"></i>
                   </a>
                 </div>
               </div>

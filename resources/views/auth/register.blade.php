@@ -5,17 +5,21 @@
     
 @section('content')
 <div class="container text-center ">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+    <div class="row justify-content-right">
+        
+    <div class="col-md-8 text-center">
+
+                <div class="container text-center border:primary">
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
-
-                        <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+                        <img class="rounded-circle" src=" ../assets/images/user.png" height="150px" width="150px">
+                        <h4>Registrarse</h4>
+                        <div class="container text-center col-md-3 py-2">
+</div>
+                        <div class="row mb-3 py-3">
+                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Nombre') }}</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -28,8 +32,8 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+                        <div class="row mb-4">
+                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
@@ -43,7 +47,7 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Contraseña') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
@@ -57,7 +61,7 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirmar contraseña') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
@@ -67,14 +71,21 @@
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
+                                    {{ __('Registrarse') }}
                                 </button>
                             </div>
+                            </div>
+                            <a class="btn btn-link col-md-8 offset-md-2 py-4" href="http://127.0.0.1:8000/login">
+                                {{ __('¿Ya tienes cuenta?') }} Iniciar Sesión</a>
                         </div>
                     </form>
+                    
                 </div>
             </div>
-        </div>
+            <div class="col-md-4">
+                    <pr>
+                    <img src="../assets/images/selling-products1.jpg">
+                    </div>
     </div>
 </div>
 @endsection
