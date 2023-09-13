@@ -1,18 +1,45 @@
 @extends('layouts.app')
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+        
+    <div class="container text-center ">
+    <div class="card">
+    <div class="row justify-content-left">
+    <div class="col-md-6">
+    <div class="card-header border:primary">{{ __('¡Únete a nosotros!') }}</div>
+    <pr>
+    <h2>Push Business</h2>
 
-                <div class="card-body">
+        <img src="../assets/images/selling-products1.jpg">
+    </div>
+        <div class="col-md-6">
+                <div class= "container text-center border:primary">
+                <div class="card-header">{{ __('Iniciar sesión') }}</div>
+
+                <div class="card-body" >
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+                        <div class="row mb-3 py-2" >
+                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Nombre') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                                @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+
+                        <div class="row mb-3 py-3" >
+                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -26,7 +53,7 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Contraseña') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
@@ -38,9 +65,13 @@
                                 @enderror
                             </div>
                         </div>
-
-                        <div class="row mb-3">
-                            <div class="col-md-6 offset-md-4">
+                        <div class="row mb-2">
+                        @if (Route::has('password.request'))
+                                    <a class="btn btn-link col-md-6 offset-md-4" href="{{ route('password.request') }}">
+                                        {{ __('Olvidaste tu contraseña?') }}
+                                    </a>
+                                @endif
+                            <!--<div class="col-md-6 offset-md-6">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
@@ -50,18 +81,17 @@
                                 </div>
                             </div>
                         </div>
-
+    -->
                         <div class="row mb-0">
-                            <div class="col-md-8 offset-md-4">
+                            <div class="col-md-8 offset-md-3 py-4" >
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
+                                    {{ __('Iniciar sesión') }}
                                 </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
+                                
+                                
+                                    
+                                <a class="btn btn-link py-5" href="http://127.0.0.1:8000/register">
+                                {{ __('¿Ya tienes cuenta?') }} Registrarse</a>
                             </div>
                         </div>
                     </form>

@@ -114,7 +114,7 @@
                         <i class="icon icon-heart"></i>
                       </a>
                       <li>
-                        <a href="">
+                        <a href="login">
                           <i class="icon icon-user"></i>
                         </a>
                       </li>
