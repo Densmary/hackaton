@@ -6,37 +6,22 @@
 @section('content')
         
     <div class="container text-center ">
-    <div class="card">
     <div class="row justify-content-left">
-    <div class="col-md-6">
-    <div class="card-header border:primary">{{ __('¡Únete a nosotros!') }}</div>
+    <div class="col-md-4">
     <pr>
-    <h2>Push Business</h2>
         <img src="../assets/images/selling-products1.jpg">
     </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
                 <div class= "container text-center border:primary">
-                <div class="card-header">{{ __('Iniciar sesión') }}</div>
 
                 <div class="card-body" >
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-
-                        <div class="row mb-3 py-2" >
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Nombre') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-
+                        <img class="rounded-circle" src=" ../assets/images/user.png" height="150px" width="150px">
+                        <h4>Iniciar Sesión</h4>
+                        <div class="container text-center col-md-3 py-2">
+                        
+</div>
                         <div class="row mb-3 py-3" >
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email') }}</label>
 
@@ -66,8 +51,8 @@
                         </div>
                         <div class="row mb-2">
                         @if (Route::has('password.request'))
-                                    <a class="btn btn-link col-md-6 offset-md-4" href="{{ route('password.request') }}">
-                                        {{ __('Olvidaste tu contraseña?') }}
+                                    <a class="btn btn-link-dark col-md-6 offset-md-3 py-1" href="{{ route('password.request') }}">
+                                        {{ __('¿Olvidaste tu contraseña?') }}
                                     </a>
                                 @endif
                             <!--<div class="col-md-6 offset-md-6">
@@ -87,9 +72,9 @@
                                     {{ __('Iniciar sesión') }}
                                 </button>
                                 
-                                
+                                </div>
                                     
-                                <a class="btn btn-link py-5" href="http://127.0.0.1:8000/register">
+                                <a class="btn btn-link col-md-8 offset-md-3 py-4" href="http://127.0.0.1:8000/register">
                                 {{ __('¿Ya tienes cuenta?') }} Registrarse</a>
                             </div>
                         </div>
