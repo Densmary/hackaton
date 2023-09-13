@@ -12,7 +12,6 @@
     <div class="card-header border:primary">{{ __('¡Únete a nosotros!') }}</div>
     <pr>
     <h2>Push Business</h2>
-
         <img src="../assets/images/selling-products1.jpg">
     </div>
         <div class="col-md-6">
