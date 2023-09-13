@@ -23,8 +23,9 @@ class SectorController extends Controller
         $sectorregister = Sector_model::paginate();
         /*SE ESPERA LA VISTA QUE CORRESPONDE A "SECTOR" PARA LA CONEXIÓN CON LA MISMA. MIENTRAS SE ESPERA 
         LA CREACIÓN DE LA VISTA, SE USA 'REGISTER.BLADE' SOLO COMO EJEMPLO, DADA LA NECESIDAD DE LA ESTRUCTURA.*/
-        return  view('register.blade', compact('sector'))
-        ->with('i' (request()->input('page', 1) -1) * $sectorregister->perPage());
+        return  view('..blade', compact('sector'))
+        ->with('i' (request()->input('page', 1) -1) * 
+        $sectorregister->perPage());
     }
 
     /**

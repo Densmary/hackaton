@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 //use App\Http\Controllers\SectorController;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\MembershipController;
 
 
 /*
@@ -25,6 +27,15 @@ Route::get('/home',[App\Http\Controllers\UserController::class, 'index'])->name(
 Route::resource('users', UserController::class);
 
 
-Auth::routes();
+//Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//RUTA PARA PAGOS
+Route::get('/index', [App\Http\Controllers\PaymentController::class, 'index'])->name('index');
+Route::resource('payments', PaymentController::class);
+
+//RUTA PARA MEMBRESÍA
+Route::get('/index', [App\Http\Controllers\MembershipController::class, 'index'])->name('index');
+Route::resource('memberships', MembershipController::class);
+

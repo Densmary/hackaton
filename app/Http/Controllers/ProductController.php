@@ -19,7 +19,8 @@ class ProductController extends Controller
     {
         $productregister = Product_model::paginate();
         return view ('blade.blade', compact('products'))
-        -> with('i' (request()->input('page' 1) -1) * $productregister->perPage());
+        -> with('i' (request()->input('page', 1) -1) * 
+        $productregister->perPage());
     }
 
     /**

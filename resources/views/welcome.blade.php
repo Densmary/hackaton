@@ -96,6 +96,9 @@
                     <ul class="menu-list">
                       <li><a href="{{route('users.index')}}" class="item-anchor" data-effect="About">Users</a></li>
                       <li><a href="index.html" class="item-anchor" data-effect="About">Home</a></li>
+                      <li><a href="{{route('payments.index')}}" class="item-anchor" data-effect="About">Pago</a></li>
+                      {{-- <li><a href="{{route('memberships.index')}}" class="item-anchor" data-effect="About">Membresía</a></li> --}}
+
 
                       <li class="user-items search-item pe-3">
                         <a href="#" class="search-button">
