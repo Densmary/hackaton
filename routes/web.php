@@ -26,11 +26,6 @@ Route::get('/home',[App\Http\Controllers\UserController::class, 'index'])->name(
 
 Route::resource('users', UserController::class);
 
-
-//Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 //RUTA PARA PAGOS
 Route::get('/index', [App\Http\Controllers\PaymentController::class, 'index'])->name('index');
 Route::resource('payments', PaymentController::class);
