@@ -20,6 +20,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home',[App\Http\Controllers\UserController::class, 'index'])->name('home');
+Route::get('/',[App\Http\Controllers\UserController::class, 'index'])->name('home');
 
 Route::resource('users', UserController::class);
