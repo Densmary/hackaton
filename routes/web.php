@@ -1,11 +1,12 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 //use App\Http\Controllers\SectorController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\MembershipController;
-
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,9 +23,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home',[App\Http\Controllers\UserController::class, 'index'])->name('home');
-
+Route::get('/home',[App\Http\Controllers\UserController::class, 'index'])->name('home');  
 Route::resource('users', UserController::class);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
+
+
+Route::get('/home', [App\Http\Controllers\Auth\LoginController::class, 'index'])->name('home');
+Route::resource('users', LoginController::class);
+
 
 //RUTA PARA PAGOS
 Route::get('/index', [App\Http\Controllers\PaymentController::class, 'index'])->name('index');

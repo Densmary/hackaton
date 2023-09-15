@@ -25,6 +25,12 @@ use Illuminate\Database\Eloquent\Model;
  * @package App
  * @mixin \Illuminate\Database\Eloquent\Builder
  */
+
+ 
+
+ 
+    
+
 class User extends Model
 {
     
@@ -36,6 +42,22 @@ class User extends Model
 		'membership' => 'required',
     ];
 
+   /* public function validar()
+    {
+        $errors = [];
+if ($request->is('post')) 
+{
+        $user = User::make($request->all());
+        $form->validate
+        ($request, 
+                [
+                'name' => 'required|min:3',
+                'password' => 'required|confirmation'
+                ]
+        )
+    }
+                }*/
+
     protected $perPage = 20;
 
     /**
@@ -44,7 +66,7 @@ class User extends Model
      * @var array
      */
     protected $table='users';
-    protected $fillable = ['name','email','age','membership'];
+    protected $fillable = ['name','email','password','age','membership'];
 
 
     /**

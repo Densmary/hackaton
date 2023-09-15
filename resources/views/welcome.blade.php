@@ -97,7 +97,7 @@
                       <li><a href="{{route('users.index')}}" class="item-anchor" data-effect="About">Users</a></li>
                       <li><a href="index.html" class="item-anchor" data-effect="About">Home</a></li>
                       <li><a href="{{route('payments.index')}}" class="item-anchor" data-effect="About">Pago</a></li>
-                      {{-- <li><a href="{{route('memberships.index')}}" class="item-anchor" data-effect="About">Membresía</a></li> --}}
+                       <li><a href="{{route('memberships.index')}}" class="item-anchor" data-effect="About">Membresía</a></li> 
 
 
                       <li class="user-items search-item pe-3">
@@ -1276,7 +1276,7 @@
                 <div class="categories">¿Eres un proveedor?</div>
                 <h5 class="item-subtitle">Contacta a mas emprededores y oferta tus productos con nosotros</h5>
                 <div class="btn-wrap">
-                  <a href="login" class="d-flex align-items-center">Iniciar sesión <i class="icon icon-arrow-io"></i>
+                  <a href={{Route('login')}}  class="d-flex align-items-center">Iniciar sesión <i class="icon icon-arrow-io"></i>
                   </a>
                 </div>
               </div>

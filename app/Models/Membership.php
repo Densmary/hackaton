@@ -28,10 +28,10 @@ class Membership extends Model
     static $rules = [
 		'payment' => 'required',
 		'ccn' => 'required',
-		//'duration' => 'required',
+		'duration' => 'required',
         'password'=>'required',
-		//'id_pay' => 'required',
-		//'id_user' => 'required',
+		'id_pay' => 'required',
+		'id_user' => 'required',
     ];
 
     protected $perPage = 20;

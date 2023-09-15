@@ -68,6 +68,56 @@
                             </div>
                         </div>
 
+                        
+                        <div class="row mb-01">
+                            <label for="age" class="col-md-01 col-form-label text-md-end">{{ __('Edad') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="age" type="number" min="18" max="80" form-control @error('age') is-invalid @enderror" name="age">
+
+                                @error('age')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+
+                        <div class="row mb-02">
+                            <label for="membership" class="col-md-02 col-form-label text txt-md-end">{{__('Membresía')}}</label>
+                            
+                            <div class="col-md-6">
+                                <input id="membership" type="number" min="1" {{--max="3"--}} class="form-control @error('membership') is-invalid @enderror" name="membership">
+
+                                @error ('membership')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message}}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
