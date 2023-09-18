@@ -23,14 +23,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home',[App\Http\Controllers\UserController::class, 'index'])->name('/');  
+Route::get('/home',[App\Http\Controllers\UserController::class, '/'])->name('/');  
 Route::resource('users', UserController::class);
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('/');
+Route::get('/home', [App\Http\Controllers\HomeController::class, '/'])->name('/');
 
 
-Route::get('/home', [App\Http\Controllers\Auth\LoginController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\Auth\LoginController::class, '/'])->name('/');
 Route::resource('users', LoginController::class);
 
 
@@ -47,4 +47,4 @@ Route::resource('memberships', MembershipController::class);
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('/');
