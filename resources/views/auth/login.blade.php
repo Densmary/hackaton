@@ -1,29 +1,18 @@
 @extends('layouts.app')
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    
 @section('content')
-        
-    <div class="container text-center ">
-    <div class="row justify-content-left">
-    <div class="col-md-4">
-    <pr>
-        <img src="../assets/images/selling-products1.jpg">
-    </div>
+<div class="container">
+    <div class="row justify-content-center">
         <div class="col-md-8">
-                <div class= "container text-center border:primary">
+            <div class="card">
+                <div class="card-header">{{ __('Login') }}</div>
 
-                <div class="card-body" >
+                <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-                        <img class="rounded-circle" src=" ../assets/images/user.png" height="150px" width="150px">
-                        <h4>Iniciar Sesión</h4>
-                        <div class="container text-center col-md-3 py-2">
-                        
-</div>
-                        <div class="row mb-3 py-3" >
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email') }}</label>
+
+                        <div class="row mb-3">
+                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -37,7 +26,7 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Contraseña') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
@@ -49,13 +38,9 @@
                                 @enderror
                             </div>
                         </div>
-                        <div class="row mb-2">
-                        @if (Route::has('password.request'))
-                                    <a class="btn btn-link-dark col-md-6 offset-md-3 py-1" href="{{ route('password.request') }}">
-                                        {{ __('¿Olvidaste tu contraseña?') }}
-                                    </a>
-                                @endif
-                            <!--<div class="col-md-6 offset-md-6">
+
+                        <div class="row mb-3">
+                            <div class="col-md-6 offset-md-4">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
@@ -65,17 +50,23 @@
                                 </div>
                             </div>
                         </div>
-    -->
+
+                       
+
+
+
+
                         <div class="row mb-0">
-                            <div class="col-md-8 offset-md-3 py-4" >
+                            <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Iniciar sesión') }}
+                                    {{ __('Login') }}
                                 </button>
-                                
-                                </div>
-                                    
-                                <a class="btn btn-link col-md-8 offset-md-3 py-4" href="http://127.0.0.1:8000/register">
-                                {{ __('¿No tienes cuenta?') }} Registrarse</a>
+
+                                @if (Route::has('password.request'))
+                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        {{ __('Forgot Your Password?') }}
+                                    </a>
+                                @endif
                             </div>
                         </div>
                     </form>

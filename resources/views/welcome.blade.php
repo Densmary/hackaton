@@ -99,6 +99,11 @@
                       <li><a href="{{route('payments.index')}}" class="item-anchor" data-effect="About">Pago</a></li>
                        <li><a href="{{route('memberships.index')}}" class="item-anchor" data-effect="About">Membresía</a></li> 
 
+                      <a class="btn btn-ptimary" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('formLogout').submit();">Cerrar Sesión</a>
+                      <form action="{{route('logout')}}" method="POST" style="=display:none;" id="formLogout">
+                        @csrf
+                      </form>
+
 
                       <li class="user-items search-item pe-3">
                         <a href="#" class="search-button">
