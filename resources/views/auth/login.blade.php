@@ -6,13 +6,12 @@
 @section('content')
 
     <div class="container text-center ">
-        <div class="py-5">
     <div class="row justify-content-left">
-    <div class="col-md-6">
+    <div class="col-md-4">
     
-        <img src="../assets/images/selling-products1.jpg" height="500px" width="500px">
+        <img src="../assets/images/push.jpg" height="600px" width="400px">
     </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
                 <div class= "container text-center border:primary">
 
                 <div class="card-body" >

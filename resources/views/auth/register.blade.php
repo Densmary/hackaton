@@ -112,7 +112,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                    <img src="../assets/images/selling-products1.jpg">
+                    <img src="../assets/images/push.jpg"  height="700px" width="500px">
                     </div>
     </div>
 </div>
