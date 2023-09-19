@@ -67,8 +67,8 @@
 
 
 
-                        <div class="row mb-01">
-                            <label for="age" class="col-md-01 col-form-label text-md-end">{{ __('Edad') }}</label>
+                        <div class="row mb-3">
+                            <label for="age" class="col-md-4 col-form-label text-md-end">{{ __('Edad') }}</label>
 
                             <div class="col-md-6">
                                 <input id="age" type="number" min="18" max="80" class="form-control @error('age') is-invalid @enderror" name="age">
@@ -83,8 +83,8 @@
 
 
 
-                        <div class="row mb-02">
-                            <label for="membership" class="col-md-02 col-form-label text txt-md-end">{{__('Membresía')}}</label>
+                        <div class="row mb-3">
+                            <label for="membership" class="col-md-4 col-form-label text-md-end py-3">{{__('Membresía')}}</label>
                             
                             <div class="col-md-6">
                                 <input id="membership" type="number" min="1" {{--max="3"--}} class="form-control @error('membership') is-invalid @enderror" name="membership">
@@ -112,7 +112,6 @@
                 </div>
             </div>
             <div class="col-md-4">
-                    
                     <img src="../assets/images/selling-products1.jpg">
                     </div>
     </div>

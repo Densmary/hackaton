@@ -6,12 +6,13 @@
 @section('content')
 
     <div class="container text-center ">
+        <div class="py-5">
     <div class="row justify-content-left">
-    <div class="col-md-4">
+    <div class="col-md-6">
     
-        <img src="../assets/images/selling-products1.jpg">
+        <img src="../assets/images/selling-products1.jpg" height="500px" width="500px">
     </div>
-        <div class="col-md-8">
+        <div class="col-md-6">
                 <div class= "container text-center border:primary">
 
                 <div class="card-body" >
@@ -30,18 +31,18 @@
 	
                         </div>
 
-                        <div class="row mb-3">
+                        <div class="row mb-3 py-4" >
                             <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Contraseña') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 	
                                 
                             </div>
                         </div>
                         <div class="row mb-2">
                         @if (Route::has('password.request'))
-                                    <a class="btn btn-link-dark col-md-6 offset-md-3 py-1" href="{{ route('password.request') }}">
+                                    <a class="btn btn-link-dark col-md-6 offset-md-4" href="{{ route('password.request') }}">
                                         {{ __('¿Olvidaste tu contraseña?') }}
                                     </a>
                                 @endif
@@ -63,7 +64,7 @@
 
                                 </div>
 
-                                <a class="btn btn-link col-md-8 offset-md-3 py-4" href="http://127.0.0.1:8000/register">
+                                <a class="btn btn-link col-md-8 offset-md-3 py-3" href="http://127.0.0.1:8000/register">
                                 {{ __('¿No tienes cuenta?') }} Registrarse</a>
                             </div>
                         </div>
