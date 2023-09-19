@@ -2,11 +2,11 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    
+
 @section('content')
 <div class="container text-center ">
     <div class="row justify-content-right">
-        
+
     <div class="col-md-8 text-center">
 
                 <div class="container text-center border:primary">
@@ -23,7 +23,6 @@
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -37,7 +36,6 @@
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -51,7 +49,6 @@
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -68,13 +65,13 @@
                             </div>
                         </div>
 
-                        
+
+
                         <div class="row mb-01">
                             <label for="age" class="col-md-01 col-form-label text-md-end">{{ __('Edad') }}</label>
 
                             <div class="col-md-6">
-                                <input id="age" type="number" min="18" max="80" form-control @error('age') is-invalid @enderror" name="age">
-
+                                <input id="age" type="number" min="18" max="80" class="form-control @error('age') is-invalid @enderror" name="age">
                                 @error('age')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -82,6 +79,8 @@
                                 @enderror
                             </div>
                         </div>
+
+
 
 
                         <div class="row mb-02">
@@ -98,26 +97,6 @@
                             </div>
                         </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
@@ -133,7 +112,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                    <pr>
+                    
                     <img src="../assets/images/selling-products1.jpg">
                     </div>
     </div>

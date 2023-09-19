@@ -94,10 +94,15 @@
 
                   <div id="main-nav" class="stellarnav d-flex justify-content-end right">
                     <ul class="menu-list">
-                      <li><a href="{{route('users.index')}}" class="item-anchor" data-effect="About">Users</a></li>
+                     {{--}} <li><a href="{{route('users.index')}}" class="item-anchor" data-effect="About">Users</a></li>--}}
                       <li><a href="index.html" class="item-anchor" data-effect="About">Home</a></li>
                       <li><a href="{{route('payments.index')}}" class="item-anchor" data-effect="About">Pago</a></li>
                        <li><a href="{{route('memberships.index')}}" class="item-anchor" data-effect="About">Membresía</a></li> 
+
+                      <a class="btn btn-ptimary" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('formLogout').submit();">Cerrar Sesión</a>
+                      <form action="{{route('logout')}}" method="POST" style="=display:center;" id="formLogout">
+                        @csrf
+                      </form>
 
 
                       <li class="user-items search-item pe-3">
