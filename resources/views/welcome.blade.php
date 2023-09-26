@@ -1,3 +1,10 @@
+
+    
+    
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,152 +31,142 @@
   </head>
   <body>
 
-    <div class="preloader-wrapper">
-      <div class="preloader">
-      </div>
-    </div>
+      <meta charset="utf-8">
+      <title>Push Business</title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <meta content="" name="keywords">
+      <meta content="" name="description">
+  
+      <!-- Favicon -->
+      <link href="../assets/images/business.png" rel="icon">
+  
+      <!-- Google Web Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+          href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+          rel="stylesheet">
+  
+      <!-- Icon Font Stylesheet -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  
+      <!-- Libraries Stylesheet -->
+      <link href="lib/animate/animate.min.css" rel="stylesheet">
+      <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  
+      <!-- Customized Bootstrap Stylesheet -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+      <!-- Template Stylesheet -->
+      <link href="css/style.css" rel="stylesheet">
+  </head>
+  
+  <body>
+      <!-- Spinner Start -->
 
-    <div class="search-popup">
-      <div class="search-popup-container">
-
-        <form role="search" method="get" class="search-form" action="">
-          <input type="search" id="search-form" class="search-field" placeholder="Empieza a buscar" value="" name="s" />
-          <button type="submit" class="search-submit"><a href="#"><i class="icon icon-search"></i></a></button>
-        </form>
-
-        <h5 class="cat-list-title">Categorias</h5>
-
-        <ul class="cat-list">
-          <li class="cat-list-item">
-            <a href="shop.html" title="Men Jackets">Ropa</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Fashion">Maquillaje</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Casual Wears">Zapatos</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Women">Cosmetiicos</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Trending">Accesorios</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Hoodie">Servicios</a>
-          </li>
-          <li class="cat-list-item">
-            <a href="shop.html" title="Kids">Ropa de niño</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <header id="header">
-      <div id="header-wrap">
-        <nav class="secondary-nav border-bottom">
-          <div class="container">
-            <div class="row d-flex align-items-center">
-              <div class="col-md-8 header-contact">
+      <!-- Spinner End -->
+  
+  
+      <!-- Navbar Start -->
+      <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+          <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+              <div class="col-lg-6 px-5 text-start">
+                  <small><i class="fa fa--marker-alt text-primary me-2"></i></small>
+                  <small class="ms-4"><i class="fa fa- text-primary me-2"></i></small>
               </div>
-              <!--<div class="col-md-4 shipping-purchase text-center">
-                <p>Free shipping on a purchase value of $200</p>
-              </div>-->
-              <div class="col-md-4 col-sm-12 user-items">
+              <div class="col-lg-6 px-5 text-end">
+                  <small><i class="fa fa- text-primary me-2"></i></small>
+                  <small class="ms-4"><i class="fa fa--alt text-primary me-2"></i></small>
               </div>
-            </div>
           </div>
-        </nav>
-        <nav class="primary-nav padding-small">
-          <div class="container">
-            <div class="row d-flex align-items-center">
-              <div class="col-lg-2 col-md-2">
-                <div class="main-logo">
-                  <a href="index.html">
-                    <img src="../assets/images/main-logo.png" alt="logo">
+  
+          <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+              <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <img src="../assets/images/business.png" alt="logo" height="50px" width="50px">
+              </a>
+              <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                  data-bs-target="#navbarCollapse">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="main-nav" class="stellarnav d-flex justify-content-end right">
+                <ul class="menu-list">
+                  <li>
+                    <a href= "">Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="cart.html">
+                      <i class="icon icon-shopping-cart"></i>
+                    </a>
+                  </li>
+
+                  </li>
+                  <a href="">
+                    <i class="icon icon-heart"></i>
                   </a>
-                </div>
-              </div>
-              <div class="col-lg-10 col-md-10">
-                <div class="navbar">
-
-                  <div id="main-nav" class="stellarnav d-flex justify-content-end right">
-                    <ul class="menu-list">
-                      <li>
-                        <a>Home
-                        </a>
-                      </li>
-                      <li>
-                        <a href="cart.html">
-                          <i class="icon icon-shopping-cart"></i>
-                        </a>
-                      </li>
-
-                      </li>
-                      <a href="wishlist.html">
-                        <i class="icon icon-heart"></i>
-                      </a>
-                      <li>
-                        <a href="login">
-                          <i class="icon icon-user"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </nav>
+                  <li>
+                    <a href="login">
+                      <i class="icon icon-user"></i>
+                    </a>
+                  </li>
+                      
+          </ul>
       </div>
-    </header>
-
-    <section id="billboard" class="overflow-hidden" >
-
-      <button class="button-prev">
-        <i class="icon icon-chevron-left"></i>
-      </button>
-      <button class="button-next">
-        <i class="icon icon-chevron-right"></i>
-      </button>
-      <div class="swiper main-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url('images/carro.png');background-repeat: no-repeat;background-size: cover;background-position: center;">
-            <div class="banner-content">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6" >
-                    <h3 class="banner-title" >¡Han llegado <br>nuevos emprendimientos!</h3>
-                    <p></p>
-                    <div class="btn-wrap">
-                      <a href="shop.html" class="btn btn-light btn-medium d-flex align-items-center" tabindex="0">Iniciar <i class="icon icon-arrow-io"></i>
-                      </a>
-                    </div>
+  </nav>
+</div>
+      <!-- Navbar End -->
+  
+  
+      <!-- Carousel Start -->
+      <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+          <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img class="w-100" src="../assets/images/tan.png" height="400px" width="400px" alt="Image">
+                      <div class="carousel-caption">
+                          <div class="container text-align-right">
+                              <div class="row justify-content-start">
+                                  <div class="col-lg-8">
+                                      <h4
+                                          class="d-inline-block border border-white rounded text-primary-dark fw-semi-bold py-1 px-3 animated slideInDown">
+                                          ¿Han llegado nuevos emprendimientos ¿Ya eres parte de Push Business? </p>
+                                      <h4 href="/" class="btn btn-primary py-3 px-5 animated slideInDown">Ver mas</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide" style="background-image: url('images/banner2.jpg');background-repeat: no-repeat;background-size: cover;background-position: center;">
-          <div class="banner-content">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <h2 class="banner-title">¿Ya eres parte de Push Business?</h2>
-                    <p>¿Ya eres parte de Push Business?</p>
-                    <div class="btn-wrap">
-                      <a href="shop.html" class="btn btn-light btn-light-arrow btn-medium d-flex align-items-center" tabindex="0">Shop it now <i class="icon icon-arrow-io"></i>
-                      </a>
-                    </div>
+                  <div class="carousel-item">
+                      <img class="w-100" src="../assets/images/si.jpg" height="400px" width="400px">
+                      <div class="carousel-caption">
+                          <div class="container">
+                              <div class="row justify-content-start">
+                                  <div class="col-lg-6">
+                                    <h4
+                                          class="d-inline-block border border-white rounded text-primary-dark fw-semi-bold py-1 px-3 animated slideInDown">
+                                          Bienvenido a Push Business, comienza a ofrecer tus productos</h4>
+                                      <a href="/" class="btn btn-primary py-3 px-5 animated slideInDown">Empieza</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
               </div>
-            </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+              </button>
           </div>
-        </div>
       </div>
-    </section>
-    
+      <!-- Carousel End -->
+
+
+
     <section id="selling-products" class="product-store bg-light-grey padding-large">
       <div class="container">
         <div class="section-header">
@@ -196,15 +193,15 @@
                   <div class="cart-button d-flex justify-content-between align-items-center">
                     <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Ampliar</span>
+
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
                     </button>
-                    <button type="button" class="view-btn tooltip d-flex">
-                      <i class="icon icon-heart"></i>
-                      <span class= "tooltip-text">Favoritos</span> 
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
+
                   </div>
                 </div>
                 <div class="product-detail">
@@ -221,17 +218,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Ampliar</span>
+
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-heart"></i>
-                      <span class="tooltip-text">Favoritos</span>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -249,18 +244,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">Carrito <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Ampliar</span>
+
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-heart"></i>
-                      <span class="tooltip-text">Favoritos</span>
-          
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -278,18 +270,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">Carrito<i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Ampliar</span>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-heart"></i>
-                      <span class="tooltip-text">Favoritos</span>
 
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
+                    </button>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -307,17 +296,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">Carrito <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Ampliar</span>
+
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-heart"></i>
-                      <span class="tooltip-text">Favoritos</span>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -335,17 +322,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">Carrito <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Ampliar</span>
+
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-heart"></i>
-                      <span class="tooltip-text">Favoritos</span>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -355,7 +340,6 @@
                   </h3>
                   <div class="item-price text-primary">$30.00</div>
                   <h6 class="subtitle"><a href=""> Tienda ortiz / Juana Zeledón</a></h6>
-                
                 </div>
               </div>
               <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -364,17 +348,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">Carrito <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Ampliar</span>
+
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-heart"></i>
-                      <span class="tooltip-text">Favoritos</span>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -393,17 +375,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">Carrito <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Ampliar</span>
+
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
                     </button>
-                    <button type="button"  class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-heart"></i>
-                      <span class="tooltip-text">Favoritos</span>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -421,17 +401,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">Carrito <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Ampliar</span>
+
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-heart"></i>
-                      <span class="tooltip-text">Favoritos</span>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -449,18 +427,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">Carrito <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text"> Ampliar</span>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-heart"></i>
-                      <span class="tooltip-text"> Favoritos</span>
 
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
+                    </button>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -478,18 +453,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">Carrito<i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Ampliar</span>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-heart"></i>
-                      <span class="tooltip-text">Favoritos</span>
 
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
+                    </button>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -507,18 +479,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">Carrito <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Ampliar</span>
-                    </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-heart"></i>
-                      <span class="tooltip-text">Favoritos</span>
 
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
+                    </button>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -528,7 +497,6 @@
                   </h3>
                   <div class="item-price text-primary">$65.00</div>
                   <h6 class="subtitle"><a href=""> Variedades Zel / Samanta Cornejo</a></h6 >
-
                 </div>
               </div>
             </div>
@@ -541,15 +509,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
+
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
                     </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -566,15 +534,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
+
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
                     </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -591,15 +559,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
+
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
                     </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -616,15 +584,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
+
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
                     </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -645,15 +613,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
+
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
                     </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -670,15 +638,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
+
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
                     </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -695,15 +663,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
+
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
                     </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -720,15 +688,15 @@
                 </div>
                 <div class="cart-concern">
                   <div class="cart-button d-flex justify-content-between align-items-center">
-                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                    <button type="button" class="btn-wrap cart-link d-flex align-items-center">carrito<i class="icon icon-arrow-io"></i>
                     </button>
-                    <button type="button" class="view-btn tooltip
-                        d-flex">
-                      <i class="icon icon-screen-full"></i>
-                      <span class="tooltip-text">Quick view</span>
+
+                    <button type="button" class="icon icon-screen-full" data-toggle="tooltip" data-placement="top" title="Ampliar">
+                      <span class="tooltip-text">.</span>
                     </button>
-                    <button type="button" class="wishlist-btn">
-                      <i class="icon icon-heart"></i>
+
+                    <button type="button" class="icon icon-heart" data-toggle="tooltip" data-placement="top" title="Favoritos">
+                      <span class="tooltip-text">.</span>
                     </button>
                   </div>
                 </div>
@@ -1163,7 +1131,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> 
 
     
     
@@ -1180,7 +1148,7 @@
           <article class="col-md-4 post-item">
             <div class="image-holder zoom-effect">
               <a href="single-post.html">
-                <img src="../assets/images/Juana.jpg" alt="post" class="post-image">
+                <img src="../assets/images/Juana.jpg" height="400px" width="400px">
               </a>
             </div>
             <div class="post-content d-flex">
@@ -1239,7 +1207,6 @@
     </section>
 
 
-
     <section id="latest-collection">
       <div class="container">
         <div class="product-collection row">
@@ -1291,101 +1258,58 @@
       </div>
     </section>
 
+<hr>
 
-
-
-    <hr>
     <footer id="footer">
-      <div class="container">
+      <div class="container py-5">
         <div class="footer-menu-list">
           <div class="row d-flex flex-wrap justify-content-between">
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer-menu">
-                <h5 class="widget-title">Ultras</h5>
+                <h5 class="widget-title ">Redes Sociales</h5>
                 <ul class="menu-list list-unstyled">
                   <li class="menu-item">
-                    <a href="about.html">About us</a>
+                    <a href="">
+                    <i class="icon icon-facebook"> Push_Business</i></a>
                   </li>
                   <li class="menu-item">
-                    <a href="#">Conditions </a>
+                    <a href=""><i class="icon icon-instagram"> Push_Business</i></a>
                   </li>
                   <li class="menu-item">
-                    <a href="blog.html">Our Journals</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Careers</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Affiliate Programme</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Ultras Press</a>
+                    <a href="blog.html"><i class="icon icon-TikTok"></i> Push Business</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer-menu">
-                <h5 class="widget-title">Customer Service</h5>
+                <h5 class="widget-title"> Acerca de nosotros</h5>
                 <ul class="menu-list list-unstyled">
                   <li class="menu-item">
-                    <a href="faqs.html">FAQ</a>
+                    <a href="#">Condiciones </a>
                   </li>
                   <li class="menu-item">
-                    <a href="contact.html">Contact</a>
+                    <a href="blog.html">Nuestros desarrolladores</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#">Privacy Policy</a>
+                    <a href="#">Afiliados</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#">Returns & Refunds</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Cookie Guidelines</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Delivery Information</a>
+                    <a href="#">Politica de privacidad</a>
                   </li>
                 </ul>
+                <h5>¿Tienes preguntas o problemas? <a href="#" class="email">pushbusinessdbs@gmail.com</a>
+                  
+                </h5>
+                
               </div>
             </div>
+            
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer-menu">
-                <h5 class="widget-title">Contact Us</h5>
-                <p>Do you have any questions or suggestions? <a href="#" class="email">ourservices@ultras.com</a>
-                </p>
-                <p>Do you need assistance? Give us a call. <br>
-                  <strong>+57 444 11 00 35</strong>
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="footer-menu">
-                <h5 class="widget-title">Forever 2018</h5>
-                <p>Cras mattis sit ornare in metus eu amet adipiscing enim. Ullamcorper in orci, ultrices integer eget arcu. Consectetur leo dignissim lacus, lacus sagittis dictumst.</p>
-                <div class="social-links">
-                  <ul class="d-flex list-unstyled">
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-youtube-play"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-behance-square"></i>
-                      </a>
-                    </li>
-                  </ul>
+                <img src="/assets/images/business.png">
+                <hr>
+                
                 </div>
               </div>
             </div>
@@ -1404,3 +1328,6 @@
     <script src="../assets/js/script.js"></script>
   </body>
 </html>
+
+    
+    

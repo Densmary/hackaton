@@ -279,8 +279,8 @@ h3, .h3 {
   line-height: 1.4;
 }
 h4, .h4 {
-  font-size: 1.1em;
-  line-height: 1.4;
+  font-size: 2.1em;
+  line-height: 1.7;
 }
 h5, .h5 {
   font-size: .83em;
@@ -858,12 +858,12 @@ fieldset[disabled] a.btn {
   background-color: var(--primary-color);
 }
 .btn.btn-primary {
-  background: var(--primary-color);
-  color: var(--light-color);
+  background: white;
+  color: #015257;
 }
 .btn.btn-primary:hover {
-  background-color: var(--dark-color);
-  color: var(--light-color);
+  background-color: #019CA4;
+  color: white;
 }
 
 /* - Buttons Aligns
@@ -1279,7 +1279,7 @@ blockquote cite {
   color: var(--accent-color);
 }
 .nav-link.disabled {
-  color: #6c757d;
+  color: #070e14;
   pointer-events: none;
   cursor: default;
 }
@@ -1300,13 +1300,13 @@ blockquote cite {
   isolation: isolate;
 }
 .nav-tabs .nav-link.disabled {
-  color: #6c757d;
+  color: #090a0a;
   background-color: transparent;
   border-color: transparent;
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  color: #050505;
   border-color: #dee2e6 #dee2e6 #fff;
 }
 .nav-tabs .dropdown-menu {
@@ -1606,6 +1606,7 @@ blockquote cite {
 }
 
 /* submenu */
+
 .stellarnav ul ul {
   background: var(--dark-color);
 }
@@ -1834,7 +1835,7 @@ blockquote cite {
     color: #191919;
 }
 .stellarnav li a{  
-    color: var(--dark-color);
+    color: black;
     font-weight: 500;
 }
 .stellarnav li.has-sub>a:after {
@@ -2011,7 +2012,7 @@ i.icon.icon-arrow-io {
 }
 .cart-concern .cart-button button {
     background: none;
-    color: var(--dark-color);
+    color: #015257;
     height: auto;
     padding: 0;
     margin: 0;
@@ -2204,14 +2205,14 @@ i.icon.icon-arrow-io {
 }
 .tabs .tab {
     font-weight: 500;
-    color: var(--dark-grey-color);
+    color: black;
     margin-right: 50px;
     cursor: pointer;
     transition: 0.2s all;
 }
 .tabs .tab.active,
 .tabs .tab:hover {
-    color: var(--primary-color);
+    color: #015257;
 }
 
 @media screen and (max-width: 991px) {
@@ -2432,17 +2433,21 @@ a.blog-categories:hover{
 
 /*----- Footer Section
 --------------------------------------------------------------*/
+footer{
+  background: #80B7BB;
+}
+
 #footer .footer-menu {
     margin-right: 50px;
 }
 .footer-menu ul.menu-list a {
-    color: var(--accent-color);
+    color: black;
 }
 .footer-menu ul.menu-list a:hover {
-    color: var(--primary-color);
+    color: #9decf0;
 }
 .footer-menu a.email {
-    color: var(--accent-color);
+    color: black;
     text-decoration: underline;
     font-weight: 600;
 }

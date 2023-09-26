@@ -84,7 +84,7 @@
 
 
                         <div class="row mb-3">
-                            <label for="membership" class="col-md-4 col-form-label text-md-end py-3">{{__('Membresía')}}</label>
+                            <label for="membership" class="col-md-4 col-form-label text-md-end py-3">{{__('Tipo de Usuario')}}</label>
                             
                             <div class="col-md-6">
                                 <input id="membership" type="number" min="1" {{--max="3"--}} class="form-control @error('membership') is-invalid @enderror" name="membership">
